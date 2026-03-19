@@ -8,6 +8,12 @@ on:
 jobs:
   update-sheet:
     runs-on: ubuntu-latest
+
+    # 이 아래 부분만 추가되었습니다.
+    defaults:
+      run:
+        working-directory: ./DisclosureInformation-Dart-main
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
